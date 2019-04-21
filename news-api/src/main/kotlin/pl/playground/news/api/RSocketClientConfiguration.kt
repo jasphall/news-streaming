@@ -19,7 +19,8 @@ class RSocketClientConfiguration {
                 .connect()
                 .dataMimeType(MimeTypeUtils.APPLICATION_JSON_VALUE)
                 .frameDecoder(PayloadDecoder.ZERO_COPY)
-                .transport(TcpClientTransport.create(7001))
+                .errorConsumer { println("Error occurred: $it") }
+                .transport(TcpClientTransport.create(7005))
                 .start()
                 .block()!!
     }

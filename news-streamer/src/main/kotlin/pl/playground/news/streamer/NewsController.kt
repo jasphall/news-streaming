@@ -14,4 +14,9 @@ class NewsController(
         return newsProvider.listen()
     }
 
+    @MessageMapping("/news/configure/speed")
+    fun changeSpeed(changeSpeed: ChangeSpeed) {
+        newsProvider.changeSpeed(changeSpeed)
+    }
+
 }

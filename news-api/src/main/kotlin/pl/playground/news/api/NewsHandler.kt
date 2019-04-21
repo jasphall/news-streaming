@@ -7,11 +7,10 @@ import org.springframework.web.reactive.socket.WebSocketSession
 import reactor.core.publisher.Mono
 
 @Component
-class NewsWebSocketHandler(
-        private val newsProvider: NewsProvider
+class NewsHandler(
+        private val newsProvider: NewsProvider,
+        private val objectMapper: ObjectMapper
 ): WebSocketHandler {
-
-    private val objectMapper = ObjectMapper()
 
     override fun handle(session: WebSocketSession): Mono<Void> {
         val publisher = newsProvider

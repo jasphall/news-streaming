@@ -17,6 +17,7 @@ repositories {
 }
 
 dependencies {
+    implementation "io.reactivex.rxjava2:rxjava:2.2.8"
     implementation 'org.springframework.boot:spring-boot-starter-rsocket'
     implementation 'org.jetbrains.kotlin:kotlin-reflect'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
