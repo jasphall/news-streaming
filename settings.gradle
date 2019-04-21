@@ -1,0 +1,4 @@
+rootProject.name = 'news-streaming'
+include 'news-streamer'
+include 'news-api'
+
