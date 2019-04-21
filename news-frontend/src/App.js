@@ -1,8 +1,17 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  componentDidMount() {
+    const webSocket = new WebSocket("ws://localhost:8080/news");
+
+    webSocket.onmessage = event => {
+      console.log("Message: ", event);
+    }
+  }
+
   render() {
     return (
       <div className="App">
