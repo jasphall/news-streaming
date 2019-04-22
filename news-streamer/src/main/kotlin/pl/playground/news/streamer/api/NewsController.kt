@@ -1,7 +1,10 @@
-package pl.playground.news.streamer
+package pl.playground.news.streamer.api
 
 import org.springframework.messaging.handler.annotation.MessageMapping
 import org.springframework.stereotype.Controller
+import pl.playground.news.streamer.domain.ChangeSpeed
+import pl.playground.news.streamer.domain.News
+import pl.playground.news.streamer.domain.NewsProvider
 import reactor.core.publisher.Flux
 
 @Controller

@@ -1,4 +1,4 @@
-package pl.playground.news.streamer
+package pl.playground.news.streamer.domain
 
 data class News(
         val id: Long,

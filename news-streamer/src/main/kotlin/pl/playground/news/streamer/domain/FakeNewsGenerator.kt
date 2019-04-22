@@ -1,4 +1,4 @@
-package pl.playground.news.streamer
+package pl.playground.news.streamer.domain
 
 import io.reactivex.Observable
 import io.reactivex.subjects.BehaviorSubject

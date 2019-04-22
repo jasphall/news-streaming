@@ -1,4 +1,4 @@
-package pl.playground.news.streamer
+package pl.playground.news.streamer.domain
 
 import reactor.core.publisher.Flux
 
