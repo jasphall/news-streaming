@@ -1,4 +1,4 @@
-package pl.playground.news.api
+package pl.playground.news.api.config
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.KotlinModule
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 @Configuration
-class CommonConfiguration {
+class ObjectMappingConfiguration {
 
     @Bean
     fun objectMapper(): ObjectMapper {

@@ -1,4 +1,4 @@
-package pl.playground.news.api
+package pl.playground.news.api.config
 
 import io.rsocket.RSocket
 import io.rsocket.RSocketFactory

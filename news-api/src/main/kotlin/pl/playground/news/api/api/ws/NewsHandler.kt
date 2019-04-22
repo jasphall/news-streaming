@@ -1,9 +1,10 @@
-package pl.playground.news.api
+package pl.playground.news.api.api.ws
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.stereotype.Component
 import org.springframework.web.reactive.socket.WebSocketHandler
 import org.springframework.web.reactive.socket.WebSocketSession
+import pl.playground.news.api.NewsProvider
 import reactor.core.publisher.Mono
 
 @Component

@@ -1,10 +1,11 @@
-package pl.playground.news.api
+package pl.playground.news.api.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.reactive.HandlerMapping
 import org.springframework.web.reactive.handler.SimpleUrlHandlerMapping
 import org.springframework.web.reactive.socket.server.support.WebSocketHandlerAdapter
+import pl.playground.news.api.api.ws.NewsHandler
 
 @Configuration
 class WebSocketServerConfiguration(
