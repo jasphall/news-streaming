@@ -8,7 +8,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'pl.playground.news'
 version = '1.0-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = '12'
 
 repositories {
     mavenCentral()
@@ -27,13 +27,13 @@ dependencies {
 compileKotlin {
     kotlinOptions {
         freeCompilerArgs = ['-Xjsr305=strict']
-        jvmTarget = '1.8'
+        jvmTarget = '12'
     }
 }
 
 compileTestKotlin {
     kotlinOptions {
         freeCompilerArgs = ['-Xjsr305=strict']
-        jvmTarget = '1.8'
+        jvmTarget = '12'
     }
 }
